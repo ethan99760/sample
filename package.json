@@ -1,0 +1,33 @@
+{
+  "name": "electron-quick-start",
+  "productName": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "scripts": {
+    "start": "npx electron-webpack dev",
+    "compile": "npx electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "electron": "^9.4.0",
+    "electron-builder": "^20.39.0",
+    "electron-packager": "^13.1.1",
+    "electron-webpack": "^2.6.2",
+    "mocha": "^6.0.2",
+    "spectron": "^5.0.0",
+    "webpack": "^4.29.6"
+  }
+}
